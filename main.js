@@ -19,9 +19,14 @@ let start = false;
 // Variable For Events Section
 
 
+let goDown = document.querySelector(".go-down");
+console.log(goDown);
 
+goDown.onclick = function(e) {
+    window.scrollTo(0, statsSection.offsetTop);
+    e.preventDefault();
 
-
+}
 
 
 
